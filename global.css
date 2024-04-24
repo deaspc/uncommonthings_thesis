@@ -140,6 +140,16 @@ header ul.is-sticky li a.active {
 /* end: header styles */
 
 /* start: hero section styles */
+#hero {
+  background: url("asset/header.png") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
 
 #hero .hero-text {
   position: absolute;
