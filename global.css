@@ -1,0 +1,578 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.7;
+  background-color: #000000;
+}
+
+* {
+  outline: none;
+}
+
+*:not(.slick-track):not(.slick-list) {
+  transition: 0.4s;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: end;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(36px, 2.5vw, 48px);
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(20px, 2.5vw, 28px);
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(14px, 2.5vw, 16px);
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+p.large-paragraph {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+/* end: global styles */
+
+/* start: header styles */
+#header-hero-container {
+  min-height: 600px;
+  height: calc(100vh);
+  position: relative;
+}
+
+header {
+  background: transparent;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+#logo {
+  font-family: "Roboto", "Helvetica", "Sans-serif";
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  top: 4px;
+}
+
+.hamburger-menu {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  padding: 3px 5px;
+  width: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: none;
+}
+
+.hamburger-menu .strip {
+  display: block;
+  height: 1px;
+  background-color: #ffffff;
+  margin: 4px 0;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+#close-flyout {
+  display: none;
+}
+
+header ul li a {
+  color: #999;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+header ul.is-sticky li a {
+  color: #000;
+}
+
+header ul li a:hover,
+header ul li a.active {
+  color: #fff;
+}
+
+header ul.is-sticky li a:hover,
+header ul.is-sticky li a.active {
+  color: #003166;
+}
+/* end: header styles */
+
+/* start: hero section styles */
+#hero {
+  background: url("asset/header.png") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+#hero .fade {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(52, 58, 64, 0.6);
+  z-index: 1;
+}
+
+#hero .hero-text {
+  position: absolute;
+  top: 50%;
+  margin: -75px auto 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  color: #fff;
+  width: 500px;
+  text-align: center;
+}
+
+#hero .hero-text p {
+  line-height: 1.5em;
+  font-weight: 300;
+  font-size: 1rem;
+}
+/* end: hero section styles */
+
+/* start: properties styles */
+#properties {
+  margin: 4rem 0 8rem;
+  position: relative;
+}
+
+#properties-slider a.slick-prev {
+  right: 80px;
+}
+
+#properties-slider .slick-slide {
+  padding: 0 15px;
+}
+
+#properties-slider img {
+  width: 100%;
+  display: block;
+}
+
+/* end: properties styles */
+
+/* start: animal styles */
+#animal {
+  margin: 4rem 20px 6rem;
+  padding: 20px 20px 20px;
+  border-bottom: 1px solid #ccc;
+  justify-content: center;
+}
+
+#animal .flex {
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+#animal .card {
+  width: 25%;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 30px;
+}
+
+#animal .card img {
+  width: 100%;
+}
+
+/* end: animal styles */
+
+/* start: footer styles */
+footer {
+  background: #333;
+  padding: 8rem 0;
+}
+
+footer .flex {
+  padding-bottom: 6rem;
+  border-bottom: 1px solid #777;
+}
+
+footer h5 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+footer h5.follow-us {
+  margin-top: 1rem;
+}
+
+footer .footer-about {
+  width: 47%;
+}
+
+footer .footer-about p {
+  width: 65%;
+}
+
+footer .footer-quick-links {
+  width: 16%;
+}
+
+footer .footer-quick-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer-quick-links ul li {
+  margin: 10px 0;
+}
+
+footer .footer-quick-links ul li a {
+  color: #777;
+  text-decoration: none;
+}
+
+footer .footer-quick-links ul li a:hover {
+  color: #fff;
+}
+
+footer .footer-subscribe {
+  width: 35%;
+}
+
+#subscribe-container {
+  position: relative;
+}
+
+footer .footer-subscribe input {
+  border-radius: 30px;
+  height: 43px;
+  font-family: "Roboto", "Helvetica", "Sans-serif";
+  border: 1px solid #6c757d;
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 10px;
+  color: #fff;
+  box-sizing: border-box;
+  width: 80%;
+}
+
+footer button.right-rounded {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: #003166;
+  font-size: 16px;
+  color: #000;
+  padding: 10px 30px 9px;
+  line-height: 1.5;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  right: 0;
+}
+
+footer button.right-rounded:hover {
+  background: #fff;
+}
+
+footer .footer-subscribe ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer-subscribe ul li {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+footer .footer-subscribe ul li:first-child {
+  margin-left: 0;
+}
+
+footer .footer-subscribe ul li a {
+  text-decoration: none;
+  color: #777;
+}
+
+footer .footer-subscribe ul li a:hover {
+  color: #fff;
+}
+
+footer small {
+  margin-top: 3rem;
+  font-size: 1rem;
+  display: block;
+  text-align: center;
+}
+
+footer small a {
+  color: #777;
+  text-decoration: none;
+}
+
+footer small a:hover {
+  color: #fff;
+}
+/* end: footer styles */
+
+/* start: media queries */
+@media (max-width: 991px) {
+  #logo {
+    top: 1px;
+  }
+
+  #nav-toggle {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    background: #fff;
+    right: -100%;
+    top: 0;
+    margin: 0;
+    padding: 2rem;
+    height: 100%;
+    width: 300px;
+    box-sizing: border-box;
+    box-shadow: 5px 0 10px 3px #999;
+  }
+
+  #close-flyout {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    font-size: 30px;
+    color: #777;
+    cursor: pointer;
+    display: block;
+    line-height: 1;
+    margin: 0;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+  }
+
+  nav ul li:first-child {
+    margin-top: 50px;
+  }
+  nav ul li a {
+    font-size: 20px;
+    color: #212529;
+  }
+
+  nav ul li a.active,
+  nav ul li a:hover {
+    color: #003166;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .large-paragraph {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .container {
+    max-width: 540px;
+  }
+
+  #hero .hero-text {
+    width: 400px;
+  }
+
+  #animal .card {
+    width: 49%;
+  }
+
+  #the-best .flex > img {
+    display: none;
+  }
+
+  #the-best .flex > div {
+    width: 100%;
+  }
+
+  #testimonials-slider p {
+    font-size: 1.2rem;
+  }
+
+  #properties .container:before {
+    top: 2px;
+    font-size: 0.85rem;
+  }
+
+  #properties-slider a.slick-arrow {
+    font-size: 0.85rem;
+  }
+
+  #properties button.rounded {
+    width: 300px;
+  }
+
+  #services .flex > div {
+    width: 48%;
+  }
+
+  #contact .flex {
+    flex-wrap: wrap;
+  }
+
+  #form-container {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  #address-container {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  footer {
+    padding: 6rem 0;
+  }
+
+  footer .flex {
+    flex-wrap: wrap;
+  }
+
+  footer .flex > div {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  footer .flex > div:first-child {
+    margin-top: 0;
+  }
+
+  footer .footer-about p {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  footer .footer-subscribe input {
+    width: 90%;
+  }
+
+  footer h5.follow-us {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #hero .hero-text {
+    width: 330px;
+  }
+
+  #animal {
+    margin: 4rem 0 3rem;
+    padding: 0 0 3rem;
+  }
+
+  #animal .card {
+    width: 100%;
+  }
+
+  #animal p.large-paragraph {
+    width: 100%;
+  }
+
+  #properties button.rounded {
+    width: 250px;
+  }
+
+  #form-container {
+    padding: 1.5rem;
+  }
+
+  footer {
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 400px) {
+  #hero .hero-text {
+    max-width: 275px;
+    width: 100%;
+  }
+
+  #properties button.rounded {
+    max-width: 250px;
+    width: 100%;
+  }
+
+  nav ul {
+    width: 200px;
+  }
+}
