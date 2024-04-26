@@ -8,10 +8,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="global.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -145,39 +147,6 @@
         let logo = $("#logo");
         let navMenu = $("#nav-menu");
         let navToggle = $("#nav-toggle");
-
-        $("#properties-slider").slick({
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          prevArrow: '<a href="#" class="slick-arrow slick-prev">previous</a>',
-          nextArrow: '<a href="#" class="slick-arrow slick-next">next</a>',
-          responsive: [
-            {
-              breakpoint: 1100,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-              },
-            },
-            {
-              breakpoint: 767,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                infinite: true,
-              },
-            },
-            {
-              breakpoint: 530,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-              },
-            },
-          ],
-        });
 
         navToggle.on("click", () => {
           navMenu.css("right", "0");
