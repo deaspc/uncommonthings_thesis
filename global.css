@@ -168,7 +168,6 @@ header ul li {
 #animal {
   margin: 4rem 20px 6rem;
   padding: 20px 20px 20px;
-  border-bottom: 1px solid #ccc;
   justify-content: center;
 }
 
@@ -192,7 +191,7 @@ header ul li {
 
 /* start: footer styles */
 footer {
-  background: #333;
+  background: #000000;
   padding: 8rem 0;
 }
 
@@ -411,11 +410,6 @@ footer small a:hover {
     padding: 2rem;
   }
 
-  #address-container {
-    width: 100%;
-    margin-top: 2rem;
-  }
-
   footer {
     padding: 6rem 0;
   }
@@ -436,10 +430,6 @@ footer small a:hover {
   footer .footer-about p {
     font-size: 1rem;
     width: 100%;
-  }
-
-  footer .footer-subscribe input {
-    width: 90%;
   }
 
   footer h5.follow-us {
@@ -463,14 +453,6 @@ footer small a:hover {
 
   #animal p.large-paragraph {
     width: 100%;
-  }
-
-  #properties button.rounded {
-    width: 250px;
-  }
-
-  #form-container {
-    padding: 1.5rem;
   }
 
   footer {
