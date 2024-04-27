@@ -8,20 +8,177 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="global.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-</html>
 
-<body>
-  <section id="hero-jellyfish">
-    <div class="text-jellyfish">
-      <h1>IMMORTAL JELLYFISH</h1>
+  <body>
+    <div id="header-hero-container">
+      <header>
+        <div class="flex container">
+          <nav>
+            <button id="nav-toggle" class="hamburger-menu">
+              <span class="strip"></span>
+              <span class="strip"></span>
+              <span class="strip"></span>
+              <span class="strip"></span>
+            </button>
+
+            <ul id="nav-menu">
+              <li><a href="#animal">CREATURE LIST</a></li>
+              <li><a href="#">QUIZ GAME</a></li>
+              <li><a href="#aboutus">ABOUT US</a></li>
+              <li><a href="#">TH/EN</a></li>
+              <li id="close-flyout"><span class="fas fa-times"></span></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section id="hero">
+        <div class="hero-text"></div>
+      </section>
     </div>
-  </section>
-</body>
+
+    <section id="properties">
+      <div class="container">
+        <h2>The collection of uncommon creatures</h2>
+        <img src="asset/animalimg.png" alt="Property 1" />
+      </div>
+    </section>
+
+    <section id="animal">
+      <div class="container">
+        <h1>CREATURE LISTS</h1>
+
+        <div class="flex">
+          <div class="card">
+            <a href="index2.html">
+              <img src="asset/immortal.png" alt="Realtor 1" />
+            </a>
+
+            <h3>Immortal jellyfish</h3>
+          </div>
+
+          <div class="card">
+            <a href="#properties">
+              <img src="asset/axolotl.png" alt="Realtor 1" />
+            </a>
+
+            <h3>Axolotl</h3>
+          </div>
+
+          <div class="card">
+            <a href="#properties">
+              <img src="asset/molamola.png" alt="Realtor 1" />
+            </a>
+            <h3>Mola Mola</h3>
+          </div>
+
+          <div class="card">
+            <a href="#properties">
+              <img src="asset/another.png" alt="Realtor 1" />
+            </a>
+
+            <h3>Mola Mola</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="flex container">
+        <div class="footer-about" id="aboutus">
+          <h5>About us</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            facere laudantium magnam voluptatum autem. Amet aliquid nesciunt
+            veritatis aliquam.
+          </p>
+        </div>
+
+        <div class="footer-follow">
+          <h5 class="follow-us">Follow Us</h5>
+          <ul>
+            <li>
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fab fa-linkedin-in"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <small> Copyright &copy; 2021 All rights reserved </small>
+    </footer>
+
+    <script>
+      $(function () {
+        let headerElem = $("header");
+
+        let navMenu = $("#nav-menu");
+        let navToggle = $("#nav-toggle");
+
+        navToggle.on("click", () => {
+          navMenu.css("right", "0");
+        });
+
+        $("#close-flyout").on("click", () => {
+          navMenu.css("right", "-100%");
+        });
+
+        $(document).on("click", (e) => {
+          let target = $(e.target);
+          if (
+            !(
+              target.closest("#nav-toggle").length > 0 ||
+              target.closest("#nav-menu").length > 0
+            )
+          ) {
+            navMenu.css("right", "-100%");
+          }
+        });
+
+        $(document).scroll(() => {
+          let scrollTop = $(document).scrollTop();
+
+          if (scrollTop > 0) {
+            navMenu.addClass("is-sticky");
+
+            headerElem.css("background", "#000000");
+            navToggle.css("border-color", "transparent");
+            navToggle.find(".strip").css("background-color", "#ffffff");
+          } else {
+            navMenu.removeClass("is-sticky");
+
+            headerElem.css("background", "transparent");
+            navToggle.css("border-color", "#000000");
+            navToggle.find(".strip").css("background-color", "#fff");
+          }
+
+          headerElem.css(
+            scrollTop >= 200
+              ? { padding: "0.5rem", "box-shadow": "0 -4px 10px 1px #999" }
+              : { padding: "1rem 0", "box-shadow": "none" }
+          );
+        });
+
+        $(document).trigger("scroll");
+      });
+    </script>
+  </body>
+</html>

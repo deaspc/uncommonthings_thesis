@@ -402,10 +402,6 @@ footer small a:hover {
     width: 300px;
   }
 
-  #services .flex > div {
-    width: 48%;
-  }
-
   #contact .flex {
     flex-wrap: wrap;
   }
