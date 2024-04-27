@@ -62,14 +62,6 @@ h3 {
   line-height: 1.2;
 }
 
-p {
-  margin: 0 0 1rem;
-}
-
-p.large-paragraph {
-  font-size: 1.25rem;
-  font-weight: 300;
-}
 /* end: global styles */
 
 /* start: header styles */
@@ -80,9 +72,9 @@ p.large-paragraph {
 }
 
 header {
-  background: transparent;
+  background: #000000;
   padding: 1rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px tra;
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -101,7 +93,7 @@ header {
 .hamburger-menu .strip {
   display: block;
   height: 1px;
-  background-color: #ffffff;
+  background-color: #000000;
   margin: 4px 0;
 }
 
@@ -118,25 +110,6 @@ header ul li {
   display: none;
 }
 
-header ul li a {
-  color: #999;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-header ul.is-sticky li a {
-  color: #000;
-}
-
-header ul li a:hover,
-header ul li a.active {
-  color: #fff;
-}
-
-header ul.is-sticky li a:hover,
-header ul.is-sticky li a.active {
-  color: #003166;
-}
 /* end: header styles */
 
 /* start: hero section styles */
@@ -246,30 +219,7 @@ footer .footer-about p {
   width: 65%;
 }
 
-footer .footer-quick-links {
-  width: 16%;
-}
-
-footer .footer-quick-links ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-footer .footer-quick-links ul li {
-  margin: 10px 0;
-}
-
-footer .footer-quick-links ul li a {
-  color: #777;
-  text-decoration: none;
-}
-
-footer .footer-quick-links ul li a:hover {
-  color: #fff;
-}
-
-footer .footer-subscribe {
+footer .footer-follow {
   width: 35%;
 }
 
@@ -277,7 +227,7 @@ footer .footer-subscribe {
   position: relative;
 }
 
-footer .footer-subscribe input {
+footer .footer-follow input {
   border-radius: 30px;
   height: 43px;
   font-family: "Roboto", "Helvetica", "Sans-serif";
@@ -304,17 +254,13 @@ footer button.right-rounded {
   right: 0;
 }
 
-footer button.right-rounded:hover {
-  background: #fff;
-}
-
-footer .footer-subscribe ul {
+footer .footer-follow ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-footer .footer-subscribe ul li {
+footer .footer-follow ul li {
   display: inline-block;
   margin: 0 16px;
 }
@@ -361,7 +307,7 @@ footer small a:hover {
 
   nav ul {
     position: fixed;
-    background: #fff;
+    background: #000000;
     right: -100%;
     top: 0;
     margin: 0;
@@ -394,12 +340,7 @@ footer small a:hover {
   }
   nav ul li a {
     font-size: 20px;
-    color: #212529;
-  }
-
-  nav ul li a.active,
-  nav ul li a:hover {
-    color: #003166;
+    color: #ffffff;
   }
 }
 
