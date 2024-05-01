@@ -193,6 +193,11 @@ header ul li {
 
 /* end: animal styles */
 
+/* quiz */
+#quiztext {
+  margin-bottom: 20px;
+}
+
 /* start: footer styles */
 footer {
   background: #000000;
