@@ -459,7 +459,40 @@ footer .footer-follow ul li {
   z-index: 1000;
 }
 
-#hero-animal {
+#hero-animal1 {
+  background: url("asset/jellyfishindex.png") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+#hero-animal2 {
+  background: url("asset/jellyfishindex.png") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+#hero-animal3 {
+  background: url("asset/jellyfishindex.png") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+#hero-animal4 {
   background: url("asset/jellyfishindex.png") center center no-repeat;
   background-size: cover;
   position: absolute;
