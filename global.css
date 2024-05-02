@@ -145,17 +145,6 @@ header ul li {
   font-weight: 300;
   font-size: 1rem;
 }
-
-#hero-jellyfish {
-  background: url("asset/jellyfishindex.png") center center no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-}
 /* end: hero section styles */
 
 /* start: properties styles */
@@ -453,4 +442,27 @@ footer .footer-follow ul li {
   nav ul {
     width: 200px;
   }
+}
+
+/* animal page */
+.text-animal {
+  position: absolute;
+  top: 50%;
+  margin: -75px auto 0;
+  margin-left: 50px;
+  z-index: 2;
+  color: #fff;
+  width: 500px;
+  text-align: start;
+}
+
+#hero-jellyfish {
+  background: url("asset/jellyfishindex.png") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
 }
