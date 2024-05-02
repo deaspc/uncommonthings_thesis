@@ -62,6 +62,39 @@ h3 {
   line-height: 1.2;
 }
 
+/* h1 th */
+h4 {
+  font-family: "Prompt", sans-serif;
+  font-size: clamp(36px, 2.5vw, 48px);
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-style: normal;
+}
+
+/* h2th */
+h5 {
+  font-family: "Prompt", sans-serif;
+  font-size: clamp(20px, 2.5vw, 28px);
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-style: normal;
+}
+
+/* h3th */
+h6 {
+  font-family: "Prompt", sans-serif;
+  font-size: clamp(14px, 2.5vw, 16px);
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-style: normal;
+}
+
 /* end: global styles */
 
 /* start: header styles */
@@ -326,10 +359,6 @@ footer .footer-follow ul li {
 
   .large-paragraph {
     font-size: 1rem;
-  }
-
-  p {
-    font-size: 0.8rem;
   }
 
   .container {
