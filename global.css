@@ -259,6 +259,18 @@ footer .footer-follow ul li {
   margin: 0 16px;
 }
 
+.container-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#ig {
+  margin-right: 50px;
+}
+
 /* end: footer styles */
 
 /* start: media queries */
