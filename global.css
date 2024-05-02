@@ -476,8 +476,8 @@ footer .footer-follow ul li {
   justify-content: start;
 
   top: 30%;
-  margin-left: 75px;
-  margin-right: 175px;
+  margin-left: 50px;
+  margin-right: 100px;
 }
 
 #animal-text {
@@ -495,7 +495,9 @@ footer .footer-follow ul li {
   border: 2px solid white;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
+  padding-top: 10px;
   width: 120px;
+  height: 50px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
