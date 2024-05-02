@@ -22,7 +22,7 @@
   <body>
     <div id="header-hero-container">
       <header>
-        <div class="flex container">
+        <div class="flex container" id="flex-header">
           <nav>
             <button id="nav-toggle" class="hamburger-menu">
               <span class="strip"></span>
@@ -33,58 +33,56 @@
 
             <ul id="nav-menu">
               <li><a href="#animal">CREATURE LIST</a></li>
-              <li><a href="#">QUIZ GAME</a></li>
+              <li><a href="#quiztext">QUIZ GAME</a></li>
               <li><a href="#aboutus">ABOUT US</a></li>
-              <li><a href="index.html">TH/EN</a></li>
+              <li><a href="index2.html">TH/EN</a></li>
               <li id="close-flyout"><span class="fas fa-times"></span></li>
             </ul>
           </nav>
         </div>
       </header>
 
-      <section id="hero">
-        <div class="hero-text"></div>
-      </section>
+      <section id="hero"></section>
     </div>
 
     <section id="properties">
       <div class="container">
-        <h2>The collection of uncommon creatures</h2>
+        <h2 id="propertiestext">The collection of uncommon creatures</h2>
         <img src="asset/animalimg.png" alt="Property 1" />
       </div>
     </section>
 
     <section id="animal">
       <div class="container">
-        <h1>CREATURE LISTS</h1>
+        <h1 id="animaltext">CREATURE LISTS</h1>
 
         <div class="flex">
-          <div class="card">
+          <div class="card" id="card1">
             <a href="index3.html">
-              <img src="asset/immortal.png" alt="Realtor 1" />
+              <img src="asset/immortal.png" />
             </a>
 
             <h3>Immortal jellyfish</h3>
           </div>
 
-          <div class="card">
-            <a href="#properties">
-              <img src="asset/axolotl.png" alt="Realtor 1" />
+          <div class="card" id="card2">
+            <a>
+              <img src="asset/axolotl.png" />
             </a>
 
             <h3>Axolotl</h3>
           </div>
 
-          <div class="card">
-            <a href="#properties">
-              <img src="asset/molamola.png" alt="Realtor 1" />
+          <div class="card" id="card3">
+            <a href="#index5.html">
+              <img src="asset/molamola.png" />
             </a>
             <h3>Mola Mola</h3>
           </div>
 
-          <div class="card">
-            <a href="#properties">
-              <img src="asset/another.png" alt="Realtor 1" />
+          <div class="card" id="card4">
+            <a href="#index6.html">
+              <img src="asset/another.png" />
             </a>
 
             <h3>Mola Mola</h3>
@@ -93,37 +91,36 @@
       </div>
     </section>
 
+    <section id="quiz">
+      <div class="container">
+        <h1 id="quiztext">QUIZ GAME</h1>
+        <a href="https://uncommonthings-quiz.vercel.app">
+          <img src="asset/quiz.png" alt="Property 2" />
+        </a>
+      </div>
+    </section>
+
     <footer>
-      <div class="flex container">
+      <div class="flex container" id="footer">
         <div class="footer-about" id="aboutus">
-          <h5>About us</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-            facere laudantium magnam voluptatum autem. Amet aliquid nesciunt
-            veritatis aliquam.
-          </p>
+          <h1 id="aboutustext">ABOUT US</h1>
+          <p>This website is part of a thesis project.</p>
         </div>
 
         <div class="footer-follow">
           <h5 class="follow-us">Follow Us</h5>
           <ul>
-            <li>
-              <a href="#"><span class="fab fa-facebook-f"></span></a>
-            </li>
-            <li>
-              <a href="#"><span class="fab fa-twitter"></span></a>
-            </li>
-            <li>
-              <a href="#"><span class="fab fa-instagram"></span></a>
-            </li>
-            <li>
-              <a href="#"><span class="fab fa-linkedin-in"></span></a>
-            </li>
+            <div class="container-btn">
+              <a href="#"
+                ><img id="ig" src="asset/ig.png" style="width: 40px"
+              /></a>
+              <a href="#"
+                ><img id="tiktok" src="asset/tiktok.png" style="width: 40px"
+              /></a>
+            </div>
           </ul>
         </div>
       </div>
-
-      <small> Copyright &copy; 2021 All rights reserved </small>
     </footer>
 
     <script>
